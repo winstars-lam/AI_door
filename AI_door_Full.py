@@ -3,14 +3,13 @@ from pyatcrobo2.parts import Servomotor
 from pystubit.button import StuduinoBitButton
 from pystubit.dsply import StuduinoBitDisplay
 import time
-'''
-WIFI_SSID = ""
-WIFI_PWD = ""
-'''
+
+WIFI_SSID = "stem_workshop"
+WIFI_PWD = "27445117"
+
 url = 'https://winstarsclass09.pythonanywhere.com/send'
-'''
+
 wifi_connect(WIFI_SSID, WIFI_PWD, trytime=3)
-'''
 sv = Servomotor('P13')
 bell = StuduinoBitButton('A')
 display = StuduinoBitDisplay()
